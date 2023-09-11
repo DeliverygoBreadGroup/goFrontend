@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-global.css">
+    <script src="scripts/pagination.js"></script>
+    <title>goBread!</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="content-navbar">
+                <img src="icons/Group 16.svg" alt="logo" class="logo">
+                <nav>
+                    <a href="#">Serviços</a>
+                    <a href="#">Inovações</a>
+                    <a href="#">Blog</a>
+                </nav>
+                <button class="login-button" onclick="login()"><span class="login-button-text">ENTRAR</span></button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="main-container">
+                <div class="content-main">
+                    <p class="sub-slogan">VENHA PARA <span style="color: var(--cor-principal);"><b>GO!</b></span></p>
+                    <br>
+                    <p class="slogan">Transformando<br> suas manhãs em <br>momentos especiais.<br>Um dia de cada vez.</p>
+                    <br>
+                    <button class="client-button" onclick="goToCLient()">Seja nosso cliente</button>
+                    <button class="commerce-button" onclick="goToCommerce()">Cadastre seu comércio</button>
+                </div>
+                <div class="containerRight">
+                    <img src="assets/Group 17.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <section class="choose">
+            <div class="choose-container">
+                <div class="sou-cliente" onclick="goToCLient()">
+                    <div class="images-content">
+                        <h2>Sou cliente</h2>
+                        <br> <br>
+                        <p><a href="#">Veja ></a></p>
+                    </div>
+                </div>
+                <div class="sou-comerciante" onclick="goToCommerce()">
+                    <div class="images-content">
+                        <h2>Sou comerciante</h2>
+                        <br> <br>
+                        <p><a href="#">Veja ></a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="services">
+            <div class="services-container">
+                <div class="title">
+                    <p>
+                        Serviços da <span style="color: var(--cor-principal);">goBread!</span> <br>
+                        <span class="sub-title">simplificando suas manhãs.</span>
+                    </p>
+                </div>
+                <div class="services-content">
+                    <div class="left">
+                        <div class="left-up">
+                            <div class="circle">
+                                <p>01</p>
+                            </div>
+                            <br>
+                            <h2>Planos</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores libero assumenda
+                                dolore
+                                expedita laboriosam! Quibusdam dolor
+                                eius, dolorum reiciendis iste molestiae minima libero tenetur, repellendus quia
+                                exercitationem aliquam maxime recusandae? </p>
+                        </div>
+                        <div class="left-down">
+                            <div class="circle">
+                                <p>02</p>
+                            </div>
+                            <br>
+                            <h2>Tecnologia</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores libero assumenda
+                                dolore
+                                expedita laboriosam! Quibusdam dolor
+                                eius, dolorum reiciendis iste molestiae minima libero tenetur, repellendus quia
+                                exercitationem aliquam maxime recusandae?</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right-up">
+                            <div class="circle">
+                                <p>03</p>
+                            </div>
+                            <br>
+                            <h2>Assinaturas</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores libero assumenda
+                                dolore
+                                expedita laboriosam! Quibusdam dolor
+                                eius, dolorum reiciendis iste molestiae minima libero tenetur, repellendus quia
+                                exercitationem aliquam maxime recusandae?</p>
+                        </div>
+                        <div class="right-down">
+                            <div class="circle">
+                                <p>04</p>
+                            </div>
+                            <br>
+                            <h2>Clientes e Comerciantes</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores libero assumenda
+                                dolore
+                                expedita laboriosam! Quibusdam dolor
+                                eius, dolorum reiciendis iste molestiae minima libero tenetur, repellendus quia
+                                exercitationem aliquam maxime recusandae?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="inovations">
+            <div class="inovations-container">
+                <div class="title">
+                    <p>
+                        Inovações<br>
+                        <span class="sub-title">Vantagens de usar a </span><span
+                            style="color: var(--cor-principal);">goBread!</span>
+                    </p>
+                </div>
+                <div class="inovations-content">
+                    <div class="inovation-card">
+                        <div class="circle circle-1"></div>
+                        <br>
+                        <h2>Personalização</h2>
+                        <br>
+                        <p>Crie sua experiência única<br>através da personalização do<br>seu pedido.</p>
+                    </div>
+                    <div class="inovation-card">
+                        <div class="circle circle-2"></div>
+                        <br>
+                        <h2>Integrações</h2>
+                        <br>
+                        <p>Integre seu comércio com nossa<br>plataforma, e conte com a<br>roteirização automática.</p>
+                    </div>
+                    <div class="inovation-card">
+                        <div class="circle circle-3"></div>
+                        <br>
+                        <h2>Atendimento</h2>
+                        <br>
+                        <p>Tenha o suporte a disposição<br>sempre que necessário,<br>estamos aqui 24h para você.</p>
+                    </div>
+                </div>
+                <button>Saiba Mais</button>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="blog">
+            <div class="blog-container">
+                <div class="title">
+                    <h1>
+                        Blog da <span style="color: var(--cor-principal);">go!</span>
+                    </h1>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-left">
+                        <div class="title">
+                            <h1>
+                                <span style="color: var(--cor-principal);">Últimos</span><br>posts
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="blog-right">
+                        <div class="blog-right-up">
+                            <div class="blog-img"></div>
+                            <div class="blog-text">
+                                <h2>APP</h2>
+                                <br>
+                                <p>Entenda o que a go! faz <br>através da tecnologia <br>para você.</p>
+                            </div>
+                        </div>
+                        <div class="blog-right-down">
+                            <div class="blog-img"></div>
+                            <div class="blog-text">
+                                <h2>Macro <br>Review</h2>
+                                <br>
+                                <p>Entenda como estamos <br>inovando a forma de <br>pagar e consumir o seu <br>café da
+                                    manhã
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="sectionSlogan">
+        <div class="container containerSlogan">
+            <h1>ASSINE COM A</h1>
+            <h2>goBread!</h2>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container containerFooter">
+            <div class="colunasInfo">
+                <img class="imgLogo" src="./icons/Group 16.svg" alt="">
+                <button class="btnInicio">Início</button>
+            </div>
+            <div class="colunasInfo">
+                <a href="">Home</a>
+                <a href="">Sou cliente</a>
+                <a href="">Sou comerciante</a>
+                <a href="">Serviços</a>
+                <a href="">Inovações</a>
+            </div>
+            <div class="colunasInfo">
+                <a href="">Whatsapp</a>
+                <a href="">Telegram</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+                <a href="">Facebook</a>
+            </div>
+            <div class="colunasInfo colunaFinal">
+                <h2>+ 55 (11) 99999-9999</h2>
+                <div class="divEmail">
+                    <p>Email de contato</p>
+                    <h2>gobread@contact.com</h2>
+                </div>
+                <div class="divEmail">
+                    <p>Email corporativo</p>
+                    <h2>gobread@group.com</h2>
+                </div>
+            </div>
+        </div>
+        <div class="finalFooter">
+            <div class="container containerFinal">
+                <p>2023 © Designed by Eric</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

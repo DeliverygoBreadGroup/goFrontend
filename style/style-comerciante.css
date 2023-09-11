@@ -1,0 +1,361 @@
+/* PARTE REFERENTE AO MENU <>*/
+
+.cabecalho{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--cor-opacity-number);
+    background-color: var(--cor-white);
+}
+
+.gridMenu{
+    display: flex;
+    justify-content: center;
+}   
+
+.parteLogo{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+}
+
+.logo{
+    width: 18%;
+}
+
+.parteMenu{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    list-style: none;
+}
+
+.item a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--cor-black);
+    font-weight: 500;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+.item a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--cor-principal);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.item a:hover:after{
+    width: 100%;
+}
+
+.btnEntrar{
+    border: none;
+    padding: 12px 55px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background-color: var(--cor-black);
+    color: var(--cor-white);
+    border-radius: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.btnEntrar:hover{
+    background-color: var(--cor-white);
+    border: 1px solid var(--cor-black);
+    color: var(--cor-black);
+    transition: 0.2s;
+}
+
+/* </MENU> */
+
+/*  SECTION BANNER SLOGAN */
+
+
+.bannerSlogan{
+    margin-top: 6rem;
+    height: 92vh;
+    background-color: var(--cor-white);
+}
+
+.content-banner{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.divisao{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+}
+
+.texto{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: var(--cor-black);
+}
+
+.access button{
+    padding: 20px 45px;
+    border: none;
+    background-color: var(--cor-white);
+    color: var(--cor-black);
+    border: 1px solid var(--cor-black);
+    font-size: 0.8rem;
+    font-weight: 400;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.access button:hover{
+    color: var(--cor-black);
+    border-radius: 0px;
+    transition: 0.5s;
+}
+
+.imgPadeira{
+    width: 90%;
+    align-self: self-end;
+}
+
+/* </SECTION BANNER SLOGAN> */
+
+/* </SECTION VANTAGENS> */
+
+.sectionVantagens{
+    display: flex;
+    flex-direction: column;
+}
+.containerVantagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120vh;
+    margin-top: 25vh;
+}
+.tituloVantagens{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+    .titulo{
+        font-size: 2.3rem;
+        font-weight: 500;
+        letter-spacing: -1.5px;
+    }
+    .subTitulo{
+        font-size: 2.3rem;
+        font-weight: 300;
+        letter-spacing: -1.5px;
+    }
+
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.individualCard{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    height: 90%;
+}
+
+.divIcone{
+    width: 100%;
+}
+
+.iconeCard{
+    border: 1px solid var(--cor-sub-letra);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.icons{
+    width: 35%;
+}
+
+.tituloCard{
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.textoCard{
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+/* </SECTION VANTAGENS> */
+
+/* <SECTION PERSONALIZE> */
+
+.sectionPersonalize{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.containerPersonalize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textoPersonalize{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3%;
+
+}
+.tituloPersonalize{
+    font-size: 2.5rem;
+    letter-spacing: -1.5px;
+}
+.paragrafo{
+    color: var(--cor-gray);
+    font-size: 1.3rem;
+    line-height: 25px;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.imagemPersonalize{
+    width: 50%;
+}
+.imgPersonalize{
+    width: 110%;
+}
+/* <SECTION SLOGAN> */
+.sectionSlogan{
+    height: 70vh;
+    width: 100%;
+}
+.containerSlogan{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tituloSlogan{
+    font-size: 6.5rem;
+}
+.marcaSlogan{
+    color: var(--cor-principal);
+    font-size: 6.5rem;
+    font-weight: 200;
+}
+/* <FOOTER> */
+.footer{
+    height: 60vh;
+    width: 100%;
+    border-top: 1px solid var(--cor-opacity-number);
+}
+.containerFooter{
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.finalFooter{
+    width: 100%;
+    height: 10%;
+    border-top: 1px solid var(--cor-opacity-number);
+}
+.colunasInfo{
+    width: 20%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.7rem;
+}
+.colunasInfo h2{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.imgLogo{
+    width: 60%;
+}
+.btnInicio{
+    width: 30%;
+    height: 15%;
+    font-size: 0.6rem;
+    font-weight: 300;
+    border-radius: 50px;
+    background-color: var(--cor-black);
+    color: var(--cor-white);
+    transition: 1s;     
+    cursor: pointer;   
+}
+.btnInicio:hover{
+    background-color: var(--cor-white);
+    border: 1px solid var(--cor-black);
+    color: var(--cor-black);
+    width: 45%;
+    border-radius: 0px;
+    transition: 1s;
+}
+.colunasInfo a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--cor-black);
+}
+.colunasInfo a:hover{
+    font-weight: 900;
+}
+.divEmail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    justify-content: space-between;
+}
+.divEmail p{
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+.containerFinal{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.6rem;
+    font-weight: 300;
+    color: gray;
+}

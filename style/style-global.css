@@ -19,6 +19,9 @@
     --cor-black: #131D29;
     --cor-white: #ffffff;
     --cor-gray: #767676;
+    --cor-opacity-number: #E8E9EA;
+    --cor-opacity-border-bottom: #FDE9EA;
+    --cor-sub-letra: #BDBDBD;
 }
 
 html,
@@ -40,17 +43,17 @@ nosso site estará todo alinhado */
 }
 
 body::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
 }
 
 body::-webkit-scrollbar-track {
-    background: #101017;
+    background: #ffffff;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #ffffff;
+    background-color: var(--cor-principal);
     border-radius: 20px;
-    border: 3px solid #313131;
+    border: 3px solid var(--cor-principal);
 }
 
 /* Boas práticas

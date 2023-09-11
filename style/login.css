@@ -1,0 +1,96 @@
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    justify-content: left;
+}
+
+.content img{
+    width: 8%;
+}
+
+/*  */
+
+.containerMain{
+    width: 100%;
+    height: 70vh;
+    margin-top: 5rem;
+}
+
+.containerContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerLeft{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.containerRight{
+    width: 50%;
+}
+
+.containerRight h1{
+    font-size: 3.5em;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.5px solid var(--cor-opacity-number);
+    cursor: default;
+    margin-top: 1rem;
+}
+
+.title h3{
+    font-size: 1.875em;
+    color: var(--cor-black);
+    font-weight: 100;
+    margin-bottom: 1.1rem;
+}   
+
+.title span{
+    font-weight: 500;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.form-inputs input{
+    border: none;
+    outline: none;
+    border-bottom: 0.2px solid var(--cor-sub-letra);
+    font-weight: 300;
+    height: 40px;
+}
+
+/* Botão de Entrar */
+
+.access{
+    margin-bottom: 2rem;
+}
+
+.access button{
+    border: none;
+    background-color: var(--cor-white);
+    border: 1px solid var(--cor-sub-letra);
+    padding: 22px 50px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size:  1.250em;
+    letter-spacing: -2px;
+}
