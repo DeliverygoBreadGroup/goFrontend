@@ -16,12 +16,15 @@
             <div class="content-navbar">
                 <img src="icons/Group 16.svg" alt="logo" class="logo">
                 <nav>
-                    <a href="#">Serviços</a>
-                    <a href="#">Inovações</a>
+                    <a href="#">SERVIÇOS</a>
+                    <a href="#">ASSINATURAS</a>
                     <a href="#">Blog</a>
                 </nav>
-                <button class="login-button" onclick="login()"><span class="login-button-text">ENTRAR</span></button>
             </div>
+                <div class="content-navbar-btn">
+                    <button class="login-button" onclick="login()"><span
+                            class="login-button-text">ENTRAR</span></button>
+                </div>
         </div>
     </header>
 
@@ -32,127 +35,188 @@
                 <div class="content-main">
                     <p class="sub-slogan">VENHA PARA <span style="color: var(--cor-principal);"><b>GO!</b></span></p>
                     <br>
-                    <p class="slogan">Transformando<br> suas manhãs em <br>momentos especiais.<br>Um dia de cada vez.</p>
+                    <p class="slogan">Assine agora e<br> receba seu <br> <span>café da manhã</span> fresco<br>na sua porta.
+                    </p>
                     <br>
-                    <button class="client-button" onclick="goToCLient()">Seja nosso cliente</button>
-                    <button class="commerce-button" onclick="goToCommerce()">Cadastre seu comércio</button>
+                    <button class="commerce-button" onclick="goToCommerce()">Sou comerciante</button>
+                    <button class="client-button" onclick="goToRegisterClient()">Seja nosso cliente</button>
                 </div>
                 <div class="containerRight">
-                    <img src="assets/Group 17.svg" alt="">
+                    <img src="assets/Group 16.png" alt="">
                 </div>
             </div>
         </div>
     </main>
 
+    <section class="sectionVantagens">
+        <div class="container containerVantagens">
+            <div class="tituloVantagens">
+                <h1 class="titulo">Como funciona</h1>
+                <h2 class="subTitulo">a <span style="color: var(--cor-principal);">goBread!<span></h2>
+            </div>
+            <div class="cards">
+                <div class="individualCard">
+                    <div class="divIcone">
+                        <div class="iconeCard">
+                            <img class="icons" src="./icons/assinatura.png" alt="">
+                        </div>
+                    </div>
+                    <h1 class="tituloCard">Assinatura</h1>
+                    <p class="textoCard">
+                        Pague uma mensalidade por pedidos ilimitados, com custos adicionais ao atingir um valor específico.
+                    </p>
+                </div>
+                <div class="individualCard">
+                    <div class="divIcone">
+                        <div class="iconeCard">
+                            <img class="icons" src="./icons/esboco-projeto 1.svg" alt="">
+                        </div>
+                    </div>
+                    <h1 class="tituloCard">Personalização</h1>
+                    <p class="textoCard">
+                        Personalize seu pedido de acordo com suas necessidades, escolhendo dias, horários e produtos para cada pedido individual.
+                    </p>
+                </div>
+                <div class="individualCard">
+                    <div class="divIcone">
+                        <div class="iconeCard">
+                            <img class="icons" src="./icons/lendo-um-livro.png" alt="">
+                        </div>
+                    </div>
+                    <h1 class="tituloCard">Conforto</h1>
+                    <p class="textoCard">
+                        Receba seus pedidos onde você estiver, conforme a disponibilidade de comércios em sua região.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionAssinaturas">
+        <div class="container containerAssinaturas">
+            <div class="assinaturasTexto">
+                <h1 class="tituloAssinaturas">
+                    Sabe quando você
+                </h1>
+                <h2 class="subTituloAssinaturas">pode começar? <span
+                        style="color: var(--cor-principal);">Agora!</span></h2>
+            </div>
+            <div class="assinaturasCards">
+                <div class="plus">
+                    <div class="assinaturaIcone">
+                        <div class="icone">
+                            <img class="imgIcone" src="./icons/sacola.png" alt="">
+                        </div>
+                        <h1>BASIC</h1>
+                    </div>
+                    <div class="assinaturaPreco">
+                        <h1>R$79,90 <span>/mês</span></h1>
+                    </div>
+                    <div class="assinaturaVantagens">
+                        <div class="individualVantagem">
+                            <img class="direito" src="./icons/direito.png" alt="">
+                            <p>Plano MENSAL</p>
+                        </div>
+                        <div class="individualVantagem">
+                            <img class="direito" src="./icons/direito.png" alt="">
+                            <p>Menor capacidade de quantidades</p>
+                        </div>
+                        <div class="individualVantagem">
+                            <img class="direito" src="./icons/direito.png" alt="">
+                            <p>Descontos exclusivos</p>
+                        </div>
+                        <div class="individualVantagem">
+                            <img class="direito" src="./icons/direito.png" alt="">
+                            <p>Entregas expressas</p>
+                        </div>
+                        <div class="individualVantagem">
+                            <img class="direito" src="./icons/direito.png" alt="">
+                            <p>Brindes</p>
+                        </div>
+                        <div class="individualVantagem">
+                            <button onclick="goToRegisterClient()">ASSINAR BASIC</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="assinaturaIcone assinaturaPro">
+                        <div class="icone">
+                            <img class="imgIcone" src="./icons/sacolas-de-compras.png" alt="">
+                        </div>
+                        <h1>FAMILY</h1>
+                    </div>
+                    <div class="assinaturaPreco precoPro">
+                        <h1>R$129,90 <span>/ano</span></h1>
+                    </div>
+                    <div class="assinaturaVantagens">
+                        <div class="individualVantagem">
+                            <img class="direito" src="./icons/direito.png" alt="">
+                            <p>Plano ANUAL</p>
+                        </div>
+                        <div class="individualVantagem">
+                            <img class="direito" src="./icons/direito.png" alt="">
+                            <p>Ampla capacidade de quantidades</p>
+                        </div>
+                        <div class="individualVantagem">
+                            <img class="direito" src="./icons/direito.png" alt="">
+                            <p>Descontos exclusivos</p>
+                        </div>
+                        <div class="individualVantagem">
+                            <img class="direito" src="./icons/direito.png" alt="">
+                            <p>Entregas expressas</p>
+                        </div>
+                        <div class="individualVantagem">
+                            <img class="direito" src="./icons/direito.png" alt="">
+                            <p>Fidelidade Premiada</p>
+                        </div>
+                        <div class="individualVantagem">
+                            <button onclick="goToRegisterClient()">ASSINAR FAMILY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="container">
         <section class="choose">
             <div class="choose-container">
-                <div class="sou-cliente" onclick="goToCLient()">
-                    <div class="images-content">
-                        <h2>Sou cliente</h2>
-                        <br> <br>
-                        <p><a href="#">Veja ></a></p>
-                    </div>
-                </div>
                 <div class="sou-comerciante" onclick="goToCommerce()">
                     <div class="images-content">
-                        <h2>Sou comerciante</h2>
-                        <br> <br>
+                        <h2>você <span>EMPRESÁRIO</span></h2>
+                        <h5>Necessita de uma rede maior de clientes?<br> 
+                            Junte-se ao goBread! e alcance novos clientes 
+                            em sua região. Aumente suas vendas e expanda 
+                            seus negócios!</h5>
                         <p><a href="#">Veja ></a></p>
                     </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <div class="container">
-        <section class="services">
-            <div class="services-container">
-                <div class="title">
-                    <p>
-                        Serviços da <span style="color: var(--cor-principal);">goBread!</span> <br>
-                        <span class="sub-title">simplificando suas manhãs.</span>
-                    </p>
-                </div>
-                <div class="services-content">
-                    <div class="left">
-                        <div class="left-up">
-                            <div class="circle">
-                                <p>01</p>
-                            </div>
-                            <br>
-                            <h2>Planos</h2>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores libero assumenda
-                                dolore
-                                expedita laboriosam! Quibusdam dolor
-                                eius, dolorum reiciendis iste molestiae minima libero tenetur, repellendus quia
-                                exercitationem aliquam maxime recusandae? </p>
-                        </div>
-                        <div class="left-down">
-                            <div class="circle">
-                                <p>02</p>
-                            </div>
-                            <br>
-                            <h2>Tecnologia</h2>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores libero assumenda
-                                dolore
-                                expedita laboriosam! Quibusdam dolor
-                                eius, dolorum reiciendis iste molestiae minima libero tenetur, repellendus quia
-                                exercitationem aliquam maxime recusandae?</p>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="right-up">
-                            <div class="circle">
-                                <p>03</p>
-                            </div>
-                            <br>
-                            <h2>Assinaturas</h2>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores libero assumenda
-                                dolore
-                                expedita laboriosam! Quibusdam dolor
-                                eius, dolorum reiciendis iste molestiae minima libero tenetur, repellendus quia
-                                exercitationem aliquam maxime recusandae?</p>
-                        </div>
-                        <div class="right-down">
-                            <div class="circle">
-                                <p>04</p>
-                            </div>
-                            <br>
-                            <h2>Clientes e Comerciantes</h2>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores libero assumenda
-                                dolore
-                                expedita laboriosam! Quibusdam dolor
-                                eius, dolorum reiciendis iste molestiae minima libero tenetur, repellendus quia
-                                exercitationem aliquam maxime recusandae?</p>
-                        </div>
+                    <div class="image">
+                        <img src="icons/commerce.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <div class="container">
+    <div class="setaIcon">
+        <img src="icons/Polygon 1.svg" alt="">
+    </div>
         <section class="inovations">
+            <div class="container">  
             <div class="inovations-container">
-                <div class="title">
+                <div class="title2">
                     <p>
                         Inovações<br>
-                        <span class="sub-title">Vantagens de usar a </span><span
-                            style="color: var(--cor-principal);">goBread!</span>
+                        <span class="sub-title2">Vantagens de usar a </span><span>goBread!</span>
                     </p>
                 </div>
                 <div class="inovations-content">
                     <div class="inovation-card">
                         <div class="circle circle-1"></div>
                         <br>
-                        <h2>Personalização</h2>
+                        <h2>Tecnologia</h2>
                         <br>
-                        <p>Crie sua experiência única<br>através da personalização do<br>seu pedido.</p>
+                        <p>Utilizamos tecnologia de<br>ponta para tornar os pedidos<br>mais simples.</p>
                     </div>
                     <div class="inovation-card">
                         <div class="circle circle-2"></div>
@@ -171,8 +235,8 @@
                 </div>
                 <button>Saiba Mais</button>
             </div>
+        </div>
         </section>
-    </div>
 
     <div class="container">
         <section class="blog">

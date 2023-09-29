@@ -1,10 +1,13 @@
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
+
 // Caminhos dos botões de cadastro
 
 function secondPartOfRegistration(){
     window.location = "./cadastroClienteTwo.html";
 }
-
-// Quando juntar as pastas, colocar uma função backPageOne no cadastroCliente.html 
 
 function thirdPartOfRegistration(){
     window.location = "./cadastroClienteThree.html";
@@ -63,7 +66,7 @@ function goToRegisterCommerce(){
 }
 
 function backPageClient(){
-    window.location = "./Cliente.html";
+    window.location = "./index.html";
 }
 
 // Fim

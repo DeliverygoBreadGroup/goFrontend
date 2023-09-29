@@ -21,16 +21,15 @@ header {
 .content-navbar {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
+    gap: 50px;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 33%;
+    gap: 25px;
 }
 
 nav a {
@@ -38,6 +37,7 @@ nav a {
     color: var(--cor-background);
     font-weight: 400;
     position: relative;
+    font-size: 0.820em;
 }
 
 nav a::after {
@@ -62,14 +62,14 @@ nav span {
 }
 
 .login-button {
-    background-color: var(--cor-black);
-    color: white;
+    background-color: var(--cor-white);
+    color: var(--cor-black);
     padding: 12px 55px;
     font-size: 0.7rem;
     font-weight: 500;
     border-radius: 50px;
     cursor: pointer;
-    border: none;
+    border: 0.5px solid var(--cor-black);
     font-weight: 500;
 }
 
@@ -98,6 +98,11 @@ main {
     color: var(--cor-black);
 }
 
+.content-main span{
+    font-weight: 600;
+    color: var(--cor-principal);
+}
+
 .containerRight {
     width: 50%;
     display: flex;
@@ -107,7 +112,7 @@ main {
 }
 
 .containerRight img {
-    width: 90%;
+    width: 115%;
 }
 
 .content-main .sub-slogan {
@@ -118,7 +123,7 @@ main {
     font-size: 2.5em;
 }
 
-.content-main button {
+.client-button{
     padding: 20px 45px;
     border: none;
     background-color: var(--cor-white);
@@ -133,47 +138,62 @@ main {
 }
 
 .content-main button:hover {
-    color: var(--cor-black);
     border-radius: 0px;
     transition: 0.5s;
+}
+
+.commerce-button{
+    padding: 20px 45px;
+    border: none;
+    background-color: var(--cor-black);
+    color: var(--cor-white);
+    border: 1px solid var(--cor-black);
+    font-size: 0.8rem;
+    font-weight: 200;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-right: 2.5rem;
 }
 
 .choose {
     width: 100%;
     height: 70vh;
-    margin-bottom: 100px;
     margin: 0 auto;
 }
 
 .choose-container {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
-.sou-cliente {
-    width: 40%;
-    height: 100%;
-    background-image: url(../assets/Frame\ 1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    padding: 30px;
-    align-items: end;
-    border: 0.5px solid var(--cor-sub-letra);
-}
 
 .sou-comerciante {
-    width: 40%;
+    width: 100%;
     height: 100%;
-    background-image: url(../assets/contentComerciante.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
+    justify-content: space-between;
     padding: 30px;
-    align-items: end;
     border: 0.5px solid var(--cor-sub-letra);
+}
+
+.images-content{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+}
+
+.images-content span{
+    font-weight: 700;
+    color: var(--cor-principal);
+}
+
+.images-content h5{
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 50px;
+    letter-spacing: -1px;
 }
 
 .choose-container h2 {
@@ -193,88 +213,86 @@ main {
     text-decoration: underline;
 }
 
-/*  */
+/* </SECTION VANTAGENS> */
 
-.services {
-    width: 100%;
-    height: 100vh;
+.sectionVantagens{
     display: flex;
-    justify-content: space-between;
-    margin-top: 15rem;
-    margin-bottom: 5rem;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 12rem;
 }
 
-.services-container {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-}
-
-.title {
-    width: 100%;
-    height: 20%;
-}
-
-.title p {
-    font-size: 2.3rem;
-    font-weight: 500;
-    letter-spacing: -1.5px;
-}
-
-.title .sub-title {
-    font-weight: 300;
-}
-
-.services-content {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.services-content .left {
-    width: 45%;
-    height: 100%;
+.containerVantagens{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 60vh;
+    margin-top: 20vh;
 }
 
-.services-content .right {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.left-up,
-.left-down,
-.right-up,
-.right-down {
+.tituloVantagens{
     width: 100%;
-    height: 45%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
+}
+    .titulo{
+        font-size: 2.3rem;
+        font-weight: 500;
+        letter-spacing: -1.5px;
+    }
+
+    .subTitulo{
+        font-size: 2.3rem;
+        font-weight: 300;
+        letter-spacing: -1.5px;
+    }
+
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
 }
 
-.left-up p,
-.left-down p,
-.right-up p,
-.right-down p {
+.individualCard{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    height: 90%;
+}
+
+.divIcone{
+    width: 100%;
+}
+
+.iconeCard{
+    border: 1px solid var(--cor-sub-letra);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.icons{
+    width: 35%;
+}
+
+.tituloCard{
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+.textoCard{
     font-size: 0.9rem;
     line-height: 25px;
 }
 
-.left-up h2,
-.left-down h2,
-.right-up h2,
-.right-down h2 {
-    font-size: 1.7rem;
-    font-weight: 400;
-    letter-spacing: -1px;
-    color: var(--cor-background);
-}
+/* </SECTION VANTAGENS> */
 
 
 .circle {
@@ -289,19 +307,165 @@ main {
     font-size: 13px;
 }
 
+/* <SECTION ASSINATURAS> */
+
+.sectionAssinaturas{
+    height: 120vh;
+    width: 100%;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+}
+
+.containerAssinaturas{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.assinaturasTexto{
+    width: 100%;
+    height: 15%;
+}
+
+.tituloAssinaturas{
+    font-size: 2.3rem;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.subTituloAssinaturas{
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+}
+
+.assinaturasCards{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus{
+
+    width: 40%;
+    border-top: 1px solid var(--cor-opacity-number);
+    border-left: 1px solid var(--cor-opacity-number);
+    border-bottom: 1px solid var(--cor-opacity-number);
+    box-shadow: -5px 2px 200px rgba(231, 231, 231, 0.549);
+    display: flex;
+    flex-direction: column;
+}
+
+.pro{
+    width: 45%;
+    box-shadow: -5px 2px 200px rgba(231, 231, 231, 0.549);
+    border-top: 12px solid var(--cor-principal);
+    border-left: 1px solid var(--cor-opacity-number);
+    border-right: 1px solid var(--cor-opacity-number);
+    border-bottom: 1px solid var(--cor-opacity-number);
+}
+
+.assinaturaIcone{
+    width: 100%;
+    height: 25%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icone{
+    width: 18%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--cor-opacity-number);
+}
+
+.imgIcone{
+    width: 100%;
+}
+
+.assinaturaPreco{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.assinaturaPreco h1 span{
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.precoPro{
+    font-size: 2rem;
+}
+
+.assinaturaVantagens{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 50px;
+}
+
+.individualVantagem{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+
+.direito{
+    width: 5%;
+}
+
+.individualVantagem button{
+    padding: 20px 45px;
+    border: none;
+    background-color: var(--cor-white);
+    color: var(--cor-black);
+    border: 1px solid var(--cor-black);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-right: 2.5rem;
+}
+
+/* </SECTION ASSINATURAS> */
+
 /*  */
+
+.setaIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+}
 
 .inovations {
     width: 100%;
     height: 100%;
-    margin-bottom: 10rem;
-    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--cor-principal);
 }
 
 .inovations-container {
     width: 100%;
     height: 100%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -316,34 +480,53 @@ main {
     align-items: center;
 }
 
+.title2 {
+    width: 100%;
+    height: 20%;
+}
+
+.title2 p {
+    font-size: 2.3rem;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    color: var(--cor-white);
+}
+
+.title2 .sub-title2 {
+    font-weight: 100;
+}
+
 .circle-1 {
-    background-image: url(../icons/card1.svg);
+    background-image: url(../icons/oculos-de-realidade-virtual\ 1.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-size: 30px;
     width: 80px;
     height: 80px;
+    border: 0.3px solid var(--cor-white);
 }
 
 .circle-2 {
-    background-image: url(../icons/card2.svg);
+    background-image: url(../icons/combinacao\ 2.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-size: 30px;
     width: 80px;
     height: 80px;
+    border: 0.3px solid var(--cor-white);
 }
 
 .circle-3 {
-    background-image: url(../icons/card3.svg);
+    background-image: url(../icons/atendimento-ao-cliente\ 2.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-size: 30px;
     width: 80px;
     height: 80px;
+    border: 0.3px solid var(--cor-white);
 }
 
 .inovation-card {
@@ -355,20 +538,22 @@ main {
     font-size: 1.7rem;
     font-weight: 400;
     letter-spacing: -1px;
-    color: var(--cor-background);
+    color: var(--cor-white);
 }
 
 .inovation-card p {
     font-size: 0.9rem;
     line-height: 25px;
+    color: var(--cor-white);
+    font-weight: 200;
 }
 
 
 .inovations-container button {
     width: 80%;
     padding: 25px 55px;
-    background-color: white;
-    color: var(--cor-principal);
+    background-color: var(--cor-principal);
+    color: var(--cor-white);
     border: 0.5px solid var(--cor-sub-letra);
     border-radius: 50px;
     font-size: 0.7em;
@@ -378,13 +563,15 @@ main {
 
 .inovations-container button:hover {
     transition: 500ms;
-    border-color: var(--cor-black);
+    background-color: var(--cor-white);
+    border: none;
+    color: var(--cor-background);
 }
 
 /*  */
 
 .blog {
-    margin-top: 100px;
+    margin-top: 12rem;
     width: 100%;
     height: 100vh;
     margin-bottom: 100px;
